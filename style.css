@@ -42,6 +42,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  cursor: default;
 }
 
 a {
@@ -100,6 +101,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--color-white);
   padding: 16px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
@@ -113,9 +115,8 @@ p {
 
 .navbar__logo {
   font-size: var(--font-medium);
-  font-weight: var(--weight-semi-bold);
-  color: color var(--color-white);
-}
+  font-weight: var(--weight-bold);
+ }
 
 .navbar__menu {
   display: flex;
@@ -135,8 +136,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--color-white);
-  background-color: var(--color-azure);
+  background-color:var(--color-dark-azure);
 }
 
 .navbar__toggle-btn {
@@ -147,4 +147,32 @@ p {
   color: var(--color-white);
   display: none;
 }
+
+/* Home */
+#home {
+  background: url('imgs/home-background.png') center/cover no-repeat;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.home_avartar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home_title,
+.home_description {
+  color:var(--color-white);
+}
+
+.home_contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+}
+
 
