@@ -14,7 +14,7 @@
   --color-light-orange: #fd9879;
   --color-orange: #fa6c41;
   --color-light-pink: #ff819c;
-  --color-pink: #ff587c;
+  --color-yellow: #fbe738;
   --color-black: #0a0909;
 
   /* Font size */
@@ -448,3 +448,28 @@ flex-basis: 40%;
   color: var(--color-roayl-azure)
 }
 
+/* Contact */
+#contact {
+  background-color: var(--color-azure);
+}
+
+.contact_title,
+.contact_email,
+.contact_rights {
+  color: var(--color-white);
+}
+
+.contact_title {
+  margin: 32px 0;
+}
+
+.contact_links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact_links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
