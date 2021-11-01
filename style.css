@@ -6,7 +6,7 @@
   --color-dark-white: #bdbdbd;
   --color-blue: #92c8fd;
   --color-azure: #0080FF;
-  --color-roayl-azure: #003fff;
+  --color-royal-azure: #003fff;
   --color-dark-azure: #003399;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -467,6 +467,27 @@ flex-basis: 40%;
 .contact_links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* Scroll*/
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color:var(--color-white);
+  background-color: var(--color-royal-azure);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms easy-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
